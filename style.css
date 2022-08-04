@@ -102,6 +102,16 @@ body {
 .sec.active {
   left: 100%;
 }
+.two {
+  left: 100%;
+  position: fixed;
+}
+.two.active {
+  display: block;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
 header {
   position: absolute;
   top: 0;
@@ -170,6 +180,10 @@ header {
   font-weight: 500;
   border-radius: 4px;
   letter-spacing: 1px;
+}
+
+.btnMenu {
+
 }
 
 .sec .imgBx {

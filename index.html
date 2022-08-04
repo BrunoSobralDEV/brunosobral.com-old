@@ -17,8 +17,8 @@
     </div>
     <div class="navLink">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#" class="btnMenu">Home</a></li>
+        <li><a href="./resume-cv.html">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Portfolio</a></li>
         <li><a href="mailto:brunosobralss@hotmail.com">Contact</a></li>
@@ -64,15 +64,42 @@
     </footer>
   </section>
 
+  <section class="sec two">
+    <header>
+      <div class="menu"><a href="#"> Menu</a></div>
+    </header>
+    <h1>Section 2</h1>
+  </section>
   <script>
+    console.log('%c Bruno Sobral ','color:hsl(240, 100%, 90%);background-color:hsl(240, 100%, 50%);')
+    console.log('%c https://www.linkedin.com/in/brunosobraldev/ ','color:hsl(60, 100%, 35%);background-color:hsl(60, 100%, 50%);')
+    console.log('%c https://github.com/BrunoSobralDEV ','color:hsl(60, 100%, 35%);background-color:hsl(60, 100%, 50%);')
+    
     let menuToggle = document.querySelector('.toggle');
     let navigation = document.querySelector('.navigation');
+    let menu = document.querySelector('.menu');
+    let btnMenu = document.querySelector('.btnMenu');
     let sec = document.querySelector('.sec');
+    let two = document.querySelector('.two');
+    
     menuToggle.onclick = function() {
       menuToggle.classList.toggle('active');
       navigation.classList.toggle('active');
       sec.classList.toggle('active');
     }
+    menu.onclick = function() {
+      menuToggle.classList.toggle('active');
+      navigation.classList.toggle('active');
+      two.classList.toggle('active');
+    }
+
+    btnMenu.onclick = function() {
+      menuToggle.classList.toggle('active');
+      navigation.classList.toggle('active');
+      // sec.classList.toggle('active');
+      two.classList.toggle('active');
+    }
+
   </script>
 </body>
 </html>
