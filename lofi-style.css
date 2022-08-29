@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* overflow: hidden; */
+  background: #1d1d1d;
+  background: url(./assets/bg.gif) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: rgb(224, 221, 221);
+  font-family: 'Poppins', sans-serif;
+}
+section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 450px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: #2b2a2a;
+  padding: 55px;
+  border-radius: 12px;
+} 
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.todo-header input {
+  width: 280px;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #191818;
+  outline: none;
+  font-size: 1.2rem;
+  background: #191818;
+  color: rgb(224, 221, 221);
+}
+
+.todo-header button {
+  width: 45px;
+  border-radius: 12px;
+  border: 1px solid #191818;
+  background: #191818;
+  color: #fff;
+  outline: none;
+}
+
+.todo-header button:hover {
+  background: #1f1e1e;
+  cursor: pointer;
+}
+
+#taskList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#taskList li {
+  padding: 20px;
+  background: #191818;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btnAction {
+  border-radius: 20px;
+  border: 1px solid #191818;
+  width: 38px;
+  height: 38px;
+  margin-right: 8px;
+  cursor: pointer;
+  background: #2b2a2a;
+  color: #fff;
+  outline: none;
+}
+
+.btnAction:hover {
+  background: #3c3a3a;
+}

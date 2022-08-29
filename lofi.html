@@ -1,24 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="lofi-style.css">
   <title>lofi</title>
   <style>
-    body {
-      /* overflow: hidden; */
-      margin: 0;
-      padding: 0;
-      background: #1d1d1d;
-    }
-    section {
-      height: 100vh;
-      width: 100vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    
   </style>
 </head>
 <body>
@@ -32,9 +23,56 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
     ></iframe>
+    <!--  
+    <div class="todo-container">
+      <div class="todo-header">
+        <input 
+          type="text" 
+          id="inputNewTask"
+          placeholder="Adicionar Nova Tarefa"
+        >
+        <button id="btnNewTask">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+      -->
+      <ul id="taskList">
+        <!-- <li>
+          <span class="taskText">Tarefa 1</span>
+          <div>
+            <button class="btnAction">
+              <i class="fa fa-pencil"></i>
+            </button>
+            <button class="btnAction">
+              <i class="fa fa-trash"></i>
+            </button>
+          </div>
+        </li> -->
+      </ul>
 
+      <!-- Jánela para editar uma tarefa
+      <div id="editWindow">
+        <button id="editWindowBtnClose">
+          <i class="fa fa-remove"></i>
+        </button>
+        <h2>#1021</h2>
+        <hr>
+        <form>
+          <div class="frm-line">
+            <label for="name">Nome</label>
+            <input type="text" id="inputTaskNameEdit">
+          </div>
+          <div class="frm-line">
+            <button id="btnRefreshTask">Salvar</button>
+          </div>
+        </form>
+      </div>-->
+    </div>
   </section>
-
+  
+  <!-- <video autoplay muted loop id="myVideo"> 
+    <source src="./assets/ScalyGraveGecko-mobile.mp4" type="video/mp4">
+  </video>-->
   <script src="lofi-script.js"></script>
 </body>
 </html>
